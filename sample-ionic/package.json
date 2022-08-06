@@ -74,7 +74,9 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
-      "cordova-plugin-firebase-messaging": {}
+      "cordova-plugin-firebase-messaging": {
+        "IOS_FIREBASE_POD_VERSION": "9.3.0"
+      }
     },
     "platforms": [
       "ios"
