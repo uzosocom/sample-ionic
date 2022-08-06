@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@ionic/cli": "6.20.1",
+    "cordova": "11.0.0",
+    "ios-sim": "9.0.0"
+  }
+}
