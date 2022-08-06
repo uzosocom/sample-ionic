@@ -46,6 +46,7 @@
     </platform>
     <platform name="ios">
         <resource-file src="GoogleService-Info.plist" />
+        <hook src="scripts/afterPluginInstall.js" type="after_plugin_install" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <icon height="57" src="resources/ios/icon/icon.png" width="57" />
