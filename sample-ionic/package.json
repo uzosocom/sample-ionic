@@ -44,6 +44,7 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
+    "com.adjust.sdk": "4.30.0",
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-firebase-messaging": "7.0.1",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
@@ -76,7 +77,8 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-firebase-messaging": {
         "IOS_FIREBASE_POD_VERSION": "9.3.0"
-      }
+      },
+      "com.adjust.sdk": {}
     },
     "platforms": [
       "ios"
