@@ -1,4 +1,13 @@
 {
+  "android": {
+    "release": {
+      "keystore": "",
+      "storePassword": "",
+      "alias": "",
+      "password" : "",
+      "packageType": "apk"
+    }
+  },
   "ios": {
     "release": {
       "codeSignIdentity": "",

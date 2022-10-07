@@ -11,7 +11,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "clear": "rimraf platforms plugins www",
-    "build:ios": "npm run clear && npx ionic cordova build ios --prod --release --device --buildConfig=build.json"
+    "build:ios": "npm run clear && npx ionic cordova build ios --prod --release --device --buildConfig=build.json",
+    "build:android": "npm run clear && npx ionic cordova build android --prod --release --device --buildConfig=build.json"
   },
   "private": true,
   "dependencies": {
@@ -48,7 +49,6 @@
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^5.0.0",
-    "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
@@ -71,7 +71,6 @@
     "plugins": {
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
-      "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {}
     },
