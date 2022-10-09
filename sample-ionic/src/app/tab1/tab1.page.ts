@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Device } from '@awesome-cordova-plugins/device/ngx';
 
 @Component({
   selector: 'app-tab1',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
-  constructor() {}
+  constructor(private device: Device) {}
+
+  public onSdkVersion(): void {
+    console.log(`sdkVersion: ${this.device.sdkVersion}`);
+  }
 }
