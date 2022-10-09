@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppReview } from '@awesome-cordova-plugins/app-review/ngx';
 
 @Component({
   selector: 'app-tab1',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
-  constructor() {}
+  constructor(private appReview: AppReview) {}
+
+  public onRequestReview() {
+    this.appReview
+      .requestReview()
+      .then(() => console.log('Success'))
+      .catch((error: any) => console.error(error));
+  }
+
+  public onOpenStoreScreen(pkg?: string) {
+    this.appReview
+      .openStoreScreen(pkg)
+      .then((res: any) => console.log(res))
+      .catch((error: any) => console.error(error));
+  }
 }
