@@ -12,7 +12,8 @@
     "e2e": "ng e2e",
     "clear": "rimraf platforms plugins www .angular",
     "build:ios": "npm run clear && npx ionic cordova build ios --prod --release --device --buildConfig=build.json",
-    "build:android": "npm run clear && npx ionic cordova build android --prod --release --device --buildConfig=build.json"
+    "build:android": "npm run clear && npx ionic cordova build android --prod --release --device --buildConfig=build.json",
+    "live:android": "npx ionic cordova run android -l"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +23,11 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
-    "@awesome-cordova-plugins/app-review": "5.46.0",
+    "@awesome-cordova-plugins/app-review": "6.0.1",
+    "@awesome-cordova-plugins/core": "6.0.1",
+    "@awesome-cordova-plugins/device": "6.0.1",
+    "@awesome-cordova-plugins/diagnostic": "6.0.1",
+    "@awesome-cordova-plugins/firebase-messaging": "6.0.1",
     "@ionic/angular": "^6.1.9",
     "@ionic/cordova-builders": "7.0.0",
     "cordova-android": "11.0.0",
@@ -48,11 +53,13 @@
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
     "cordova-plugin-app-review": "3.0.0",
-    "cordova-plugin-device": "2.0.2",
-    "cordova-plugin-ionic-keyboard": "^2.0.5",
-    "cordova-plugin-ionic-webview": "^5.0.0",
-    "cordova-plugin-statusbar": "2.4.2",
+    "cordova-plugin-device": "2.1.0",
+    "cordova-plugin-firebase-messaging": "7.0.3",
+    "cordova-plugin-ionic-keyboard": "2.2.0",
+    "cordova-plugin-ionic-webview": "5.0.0",
+    "cordova-plugin-statusbar": "3.0.0",
     "cordova-support-android-plugin": "2.0.4",
+    "cordova.plugins.diagnostic": "7.1.1",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -79,6 +86,13 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-app-review": {
         "ANDROID_PLAY_REVIEW_VERSION": "2.0.+"
+      },
+      "cordova-plugin-firebase-messaging": {
+        "ANDROID_FIREBASE_BOM_VERSION": "30.3.1"
+      },
+      "cordova.plugins.diagnostic": {
+        "ANDROIDX_VERSION": "1.0.0",
+        "ANDROIDX_APPCOMPAT_VERSION": "1.3.1"
       }
     },
     "platforms": [

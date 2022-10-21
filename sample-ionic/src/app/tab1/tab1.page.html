@@ -11,10 +11,32 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-item>
+    <ion-label slot="start">Permission</ion-label>
+    <ion-note slot="end">{{ permission }}</ion-note>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <h3>Token</h3>
+      <p slot="end" class="ion-text-wrap">{{ token }}</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-text>
+    <h1>Firebase Messaging</h1>
+  </ion-text>
+  <ion-button expand="full" (click)="onRequestPermission()"
+    >Request Permission</ion-button
+  >
+  <ion-button expand="full" (click)="onGetToken()">Get Token</ion-button>
+  <ion-button expand="full" (click)="onDeleteToken()">Delete Token</ion-button>
+
+  <ion-text>
+    <h1>App Review</h1>
+  </ion-text>
   <ion-button expand="full" (click)="onRequestReview()"
     >Request Review</ion-button
   >
-
   <ion-button expand="full" (click)="onOpenStoreScreen()"
     >Open Store Screen</ion-button
   >
